@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Germain through the website contact form.">
+
+    <title>Contact | Germain's Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+
+    <!-- Accessibility: Skip directly to main content -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="container">
+
+            <h1>Contact Me</h1>
+
+            <p>
+                I'd love to hear from you. Feel free to get in touch!
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Main navigation">
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="who-i-am.html">
+                    Who I Am
+                </a>
+            </li>
+
+            <li>
+                <a href="why-coding.html">
+                    Why Coding
+                </a>
+            </li>
+
+            <li>
+                <a href="interests.html">
+                    Interests
+                </a>
+            </li>
+
+            <li>
+                <a href="milestones.html">
+                    Milestones
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                   class="active"
+                   aria-current="page">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+
+        <!-- INTRODUCTION -->
+        <section>
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Thank you for visiting my website. As I continue learning
+                web development, I welcome opportunities to connect with
+                others who share an interest in technology and programming.
+            </p>
+
+            <p>
+                Please complete the form below, and I'll get back to you
+                as soon as possible.
+            </p>
+
+            <!-- JavaScript Show/Hide Feature -->
+            <div class="message">
+
+                <button
+                    id="message-button"
+                    class="button button-primary"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="learning-message">
+                    Show Message
+                </button>
+
+                <p id="learning-message" hidden>
+                    I am continuing to build my coding skills.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section>
+
+            <h2>Contact Form</h2>
+
+            <form
+                id="contact-form"
+                action="#"
+                method="post">
+
+                <!-- Full Name -->
+                <label for="visitor-name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="visitor-name"
+                    name="visitor-name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required>
+
+                <!-- Email -->
+                <label for="visitor-email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="visitor-email"
+                    name="visitor-email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required>
+
+                <!-- Subject -->
+                <label for="visitor-subject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="visitor-subject"
+                    name="visitor-subject"
+                    placeholder="Enter the subject"
+                    required>
+
+                <!-- Message -->
+                <label for="visitor-message">
+                    Message
+                </label>
+
+                <textarea
+                    id="visitor-message"
+                    name="visitor-message"
+                    placeholder="Write your message here..."
+                    rows="7"
+                    required></textarea>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+
+                    <button
+                        class="button button-primary"
+                        type="submit">
+                        Submit
+                    </button>
+
+                    <button
+                        class="button button-secondary"
+                        type="reset">
+                        Clear Form
+                    </button>
+
+                </div>
+
+            </form>
+
+            <!-- Confirmation Screen -->
+            <div
+                id="confirmation"
+                class="message confirmation"
+                hidden
+                role="status"
+                aria-live="polite">
+
+                <h2>Thank You!</h2>
+
+                <p id="confirmation-message"></p>
+
+                <button
+                    id="return-button"
+                    class="button button-primary"
+                    type="button">
+                    Return to Form
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- EXPLANATION -->
+        <section>
+
+            <h2>How This Form Works</h2>
+
+            <p>
+                At the moment, this form demonstrates the front-end portion
+                of a website. HTML provides the structure of the form, while
+                CSS controls its appearance and layout.
+            </p>
+
+            <p>
+                JavaScript adds behavior to the form. When the visitor
+                submits the form, JavaScript prevents the page from
+                reloading and displays a confirmation message instead.
+            </p>
+
+            <p>
+                In future lessons, a Python backend could receive the
+                submitted information, process it securely, and either
+                store it in a database or send it by email.
+            </p>
+
+        </section>
+
+        <!-- ID VS NAME -->
+        <section>
+
+            <h2>
+                Example:
+                <code>id</code> vs.
+                <code>name</code>
+            </h2>
+
+            <p>
+                For the <strong>Full Name</strong> field:
+            </p>
+
+            <pre><code>id="visitor-name"
+name="visitor-name"</code></pre>
+
+            <ul>
+
+                <li>
+                    <strong>id</strong> uniquely identifies the element
+                    on the webpage. It connects the label to the input
+                    field and can also be used by CSS or JavaScript.
+                </li>
+
+                <li>
+                    <strong>name</strong> identifies the data that is sent
+                    to the backend when the form is submitted.
+                </li>
+
+            </ul>
+
+            <p>
+                Although both values are the same in this project,
+                they serve different purposes.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Germain. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
