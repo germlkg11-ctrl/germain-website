@@ -1,0 +1,157 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Germain's Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/svgs/solid/code.svg">
+
+    <style>
+        .project-card {
+            background-color: #ffffff;
+            border: 1px solid #d5dde5;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card h2 {
+            color: #003366;
+            margin-top: 0;
+        }
+
+        .project-links {
+            margin-top: 20px;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            background-color: #00509e;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-links a:hover,
+        .project-links a:focus {
+            background-color: #003366;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>My Projects</h1>
+        <p>Projects that demonstrate what I am learning and building through web development.</p>
+
+        <button class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-nav">
+            ☰
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="who-i-am.html">Who I Am</a>
+            <a href="why-coding.html">Why Coding</a>
+            <a href="interests.html">Interests</a>
+            <a href="milestones.html">Milestones</a>
+            <a href="projects.html" aria-current="page">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section>
+            <h2>My Web Development Projects</h2>
+
+            <p>
+                This page is the front door to my growing portfolio. Each project
+                represents something I have learned and practiced during my journey
+                into web development.
+            </p>
+        </section>
+
+        <section class="project-card">
+            <h2>Feedback Card</h2>
+
+            <p>
+                The Feedback Card is an interactive web project that allows a user
+                to select a rating and receive a personalized response.
+            </p>
+
+            <p>
+                Through this project, I learned more about JavaScript functions,
+                form handling, return values, event listeners, and preventing a
+                form from reloading the page.
+            </p>
+
+            <div class="project-links">
+                <a href="https://germlkg11-ctrl.github.io/feedback-card/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Live Project
+                </a>
+
+                <a href="https://github.com/germlkg11-ctrl/feedback-card"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Repository
+                </a>
+            </div>
+        </section>
+
+        <section class="project-card">
+            <h2>FAQ Card</h2>
+
+            <p>
+                The FAQ Card is an interactive project that lets users open and
+                close frequently asked questions while keeping the interface simple
+                and accessible.
+            </p>
+
+            <p>
+                Through this project, I learned how to use JavaScript to control
+                page behavior, work with functions, manage open and closed states,
+                and organize my work using Git branches and pull requests.
+            </p>
+
+            <div class="project-links">
+                <a href="https://germlkg11-ctrl.github.io/faq-card/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Live Project
+                </a>
+
+                <a href="https://github.com/germlkg11-ctrl/faq-card"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Repository
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Germain. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
