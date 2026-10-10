@@ -26,6 +26,64 @@ console.log("script.js loaded");
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* ========================================================
+       MILESTONES TABLE
+       ======================================================== */
+
+    const milestones = [
+        {
+            week: "Week 1",
+            milestone: "Learned HTML5 webpage structure",
+            skills: "Headings, paragraphs, images, and hyperlinks"
+        },
+        {
+            week: "Week 2",
+            milestone: "Built my first personal webpage",
+            skills: "Writing HTML and organizing page content"
+        },
+        {
+            week: "Week 3",
+            milestone: "Created a multi-page website",
+            skills: "Navigation links and multiple HTML pages"
+        },
+        {
+            week: "Week 4",
+            milestone: "Learned CSS styling",
+            skills: "Colors, typography, spacing, borders, and layouts"
+        },
+        {
+            week: "Week 5",
+            milestone: "Made my website responsive",
+            skills: "Flexbox, media queries, and mobile layouts"
+        },
+        {
+            week: "Week 6",
+            milestone: "Created a contact form",
+            skills: "HTML forms and accessible form controls"
+        },
+        {
+            week: "Week 7",
+            milestone: "Improved website accessibility",
+            skills: "Semantic HTML, keyboard navigation, ARIA, and JavaScript"
+        }
+    ];
+
+    const milestonesBody =
+        document.querySelector("#milestones-body");
+
+    if (milestonesBody) {
+        for (const milestone of milestones) {
+            const row = document.createElement("tr");
+
+            row.innerHTML = `
+                <th scope="row">${milestone.week}</th>
+                <td>${milestone.milestone}</td>
+                <td>${milestone.skills}</td>
+            `;
+
+            milestonesBody.appendChild(row);
+        }
+    }
 
     /* ========================================================
        INTERACTIVE INTERESTS GALLERY
